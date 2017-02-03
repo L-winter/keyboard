@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>键盘</title>
+  <link rel="stylesheet" type="text/css" href="cs/keyboard.css">
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/keyboard.js"></script>
+</head>
+<body>
+<h1>下面是聊天显示区</h1>
+<div id="keyboard_show">
+
+</div>
+<div>
+<input type="text" id="keyboard-target"  >
+<span class="keyboard-on keyboard-on-button" >发送</span>
+</div>
+
+<!--.keyboard-on 发送  -->
+
+
+<!-- <div id="keyboard-on">打开软键盘</div> -->
+
+<div id="keyboard">
+  <div id="keyboard-number" class="keyboard-line">
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">1</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">2</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">3</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">4</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">5</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">6</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">7</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">8</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">9</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span class="keyboard-value  ">0</span>
+    </div>
+  </div>
+
+  <div class="keyboard-face">
+  </div>
+
+  <div class="keyboard-letter">
+    <div id="keyboard-one" class="keyboard-line">
+      <div class="keyboard-butn10">
+       <span class="keyboard-value">Q</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value">W</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">E</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">R</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">T</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">Y</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">U</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">I</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">O</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">P</span>
+      </div>
+    </div>
+    <div id="keyboard-two" class="keyboard-line" >
+      <div class="keyboard-butn5">
+      <span></span>
+      </div>
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">A</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">S</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">D</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">F</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">G</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">H</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">J</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">K</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">L</span>
+      </div>
+
+      <div class="keyboard-butn5">
+      <span ></span>
+      </div>
+    </div>
+    <div id="keyboard-three" class="keyboard-line">
+      <div class="keyboard-butn10">
+        <span class="keyboard-capital"><i class="icon iconfont">&#xe913;</i></span>
+      </div>
+
+      <div class="keyboard-butn5">
+        <span></span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">Z</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">X</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">C</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">V</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">B</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">N</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">M</span>
+      </div>
+
+      <div class="keyboard-butn5">
+        <span ></span>
+      </div>
+      <div class="keyboard-butn10">
+        <span class=" keyboard-delen">  <i class="icon iconfont">&#xe671;</i></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="keyboard-symbol">
+    <div id="keyboard-one" class="keyboard-line">
+      <div class="keyboard-butn10">
+       <span class="keyboard-value">,</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value">~</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">&</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">*</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">!</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">@</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">#</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">$</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">%</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">^</span>
+      </div>
+    </div>
+
+    <div id="keyboard-two" class="keyboard-line">
+      <div class="keyboard-butn10">
+       <span class="keyboard-value">(</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value">)</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">|</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">=</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">-</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">+</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">[</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">]</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">;</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">'</span>
+      </div>
+    </div>
+
+   <div id="keyboard-two" class="keyboard-line">
+
+      <div class="keyboard-butn5">
+        <span ></span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span id="keyboard-abc">ABC</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value">~</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">\</span>
+      </div>
+
+      <div class="keyboard-butn10">
+       <span class="keyboard-value ">_</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">“</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">”</span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">?</span>
+      </div>
+
+
+      <div class="keyboard-butn10">
+        <span class="keyboard-value ">。</span>
+      </div>
+
+      <div class="keyboard-butn5">
+        <span ></span>
+      </div>
+
+      <div class="keyboard-butn10">
+        <span class=" keyboard-delen">  <i class="icon iconfont">&#xe671;</i></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="keyboard-four" class="keyboard-line">
+    <div class="keyboard-butn10">
+      <span class="keyboard-show">123</span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span id="keyboard-symbol-on">
+        符
+      </span>
+    </div>
+
+    <div class="keyboard-butn10">
+      <span id="keyboard-face-on"><i class="icon iconfont">&#xe61c;</i></span>
+    </div>
+
+    <div class="keyboard-butn50">
+      <span class="keyboard-blank"><i class="icon iconfont">&#xe6af;</i></span>
+    </div>
+
+
+    <div class="keyboard-butn20">
+      <span class="keyboard-on">Send</span>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $("body").Softkeyboard({
+      Inputbox: '#keyboard-target', //输入框
+      // switch:'#keyboard-on',        //软键盘开关
+      mobileup:true,                //响应移动端
+      // background: '#2F394C' ,       //键盘背景颜色
+      // buttoncolor: '#4C5B78',          //按钮背景
+      // fontcolor:'#fff',              //字体颜色
+      // buttonhovercolor:'#71A5EA',   //按钮移入出背景
+      // fonthovercolor:'#fff',         //移入字体颜色
+      faceup: true,                 //是否使用表情
+      facesrc:'arclist',            //表情包路径必须先开启表情
+      facelength: 30 ,              //表情包数量,表情请以数字排序命名
+      empty: true,                  //点击清空输入框
+      Return : true,                //当需要聊天消息回执时候开启
+      keyboardoff_on: true,          //关闭/开启用户键盘和手机输入事件
+  })
+  //点击发送时候的消息返回值为全局变量 keyboard_record ，可直接读取当前的
+
+})
+</script>
+</body>
+</html>

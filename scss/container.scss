@@ -1,0 +1,182 @@
+*{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1473414100'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1473414100#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1473414100') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf?t=1473414100') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1473414100#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-biaoqing:before { content: "\e61c"; }
+.icon-webdiywenbenkongge:before { content: "\e6af"; }
+.icon-biaoqingshanchujian:before { content: "\e671"; }
+.icon-mianxingtubiao1daxiesuoding:before { content: "\e913"; }
+
+
+#keyboard-target {
+  color: #000;
+  bottom:0;
+  width: 60%;
+  height: 50px;
+  @include border-radius(10px);
+  border:1px solid #000;
+  margin:4px;
+  display: none;
+}
+.keyboard-on-button {
+  padding: 10px;
+  min-height: 50px;
+  cursor: pointer;
+  background-color:#2F394C;
+  color: #fff;
+  @include border-radius(5px);
+}
+
+
+#keyboard {
+  //display: none;
+  color: #fff;
+  border:1px solid #2F394C;
+  padding:3px 0;
+  position: fixed;
+  background-color: #2F394C;
+  width: 50%;
+  bottom: 0px;
+  margin:auto;
+
+  #keyboard-one{
+    overflow: hidden;
+  }
+  #keyboard-two {
+    overflow: hidden;
+  }
+  #keyboard-three {
+    overflow: hidden;
+  }
+
+  .keyboard-symbol {
+    overflow: hidden;
+    display: none;
+  }
+
+  .keyboard-letter {
+    overflow: hidden;
+    display: block;
+  }
+  #keyboard-number {
+    overflow: hidden;
+    display: none;
+  }
+
+  .keyboard-line {
+    clear: both;
+    width: 100%;
+  }
+
+  .keyboard-butn10 {
+    float: left;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    margin-top: 3px;
+
+    span {
+      display: inline-block;
+      width: 90%;
+      padding:10% 0;
+      @include border-radius(4px);
+      background-color: #4C5B78;
+      cursor: pointer;
+      &:hover {
+        @include transition(all 0.2s);
+        background-color:#71A5EA;
+      }
+    }
+  }
+
+  .keyboard-butn5 {
+    float: left;
+    width: 5%;
+    height: 100%;
+
+    span {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  #keyboard-four {
+    overflow: hidden;
+    .keyboard-butn20 {
+      float: left;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      margin-top: 3px;
+
+      span {
+        display: inline-block;
+        width: 90%;
+        padding:6% 0;
+        @include border-radius(4px);
+        background-color: #5D9CEC;
+        cursor: pointer;
+        &:hover {
+          @include transition(all 0.2s);
+          background-color:#71A5EA;
+        }
+      }
+    }
+
+    .keyboard-butn50,.keyboard-butn60 {
+      float: left;
+      height: 100%;
+      text-align: center;
+      margin-top: 3px;
+
+      span {
+        display: inline-block;
+        width: 93%;
+        padding:2% 0;
+        @include border-radius(4px);
+        background-color: #4C5B78;
+        cursor: pointer;
+        &:hover {
+          @include transition(all 0.2s);
+          background-color:#71A5EA;
+        }
+      }
+    }
+    .keyboard-butn50{
+      width: 50%;
+    }
+    .keyboard-butn60{
+      width: 60%;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  //下面是表情包
+  .keyboard-face {
+    overflow: hidden;
+    display: none;
+    background-color:#fff;
+  }
+}
